@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deprecate CPE Item</title>
+    {{ form.media.css }}
+</head>
+<body>
+<h1>Deprecate CPE Item</h1>
+<form action="{% url 'item-deprecate' %}" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Deprecate Item">
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{ form.media.js }}
+</body>
+</html>

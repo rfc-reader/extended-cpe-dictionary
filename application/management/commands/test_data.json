@@ -1,0 +1,230 @@
+{
+  "source_uri": "urn://cpe-dict:test",
+  "imported_at": "1970-01-01T00:00:00Z",
+  "generator": {
+    "product_name": "TEST",
+    "product_version": "1.0.0",
+    "schema_version": "2.3",
+    "timestamp": "1970-01-01T00:00:00Z"
+  },
+  "cpe-items": [
+    {
+      "deprecated": false,
+      "updated_at": "1970-01-01T00:00:00Z",
+      "created_at": "1970-01-01T00:00:00Z",
+      "cpe_name_id": "00000000-0000-0000-0000-000000000000",
+      "cpe23": {
+        "deprecations": [],
+        "name": "cpe:2.3:a:rfc-reader:extended_cpe_dictionary:1.0.0:rc0:*:*:*:*:*:*",
+        "provenance": {
+          "created_at": "1970-01-01T00:00:00Z",
+          "changes": [
+            {
+              "change_type": "ORIGINAL_RECORD",
+              "date": "1970-01-01T00:00:00Z",
+              "comments": "The Original Record Change Description",
+              "evidence": {
+                "evidence": "CURATOR_UPDATE",
+                "href": "https://github.com/rfc-reader/extended-cpe-dictionary"
+              }
+            }
+          ],
+          "organizations": [
+            {
+              "role": "authority",
+              "date": "1970-01-01T00:00:00Z"
+            },
+            {
+              "role": "submitter",
+              "date": "1970-01-01T00:00:00Z"
+            }
+          ]
+        }
+      },
+      "titles": [
+        {
+          "language": "en-US",
+          "value": "Extended CPE Dictionary Version 1.0.0rc0"
+        }
+      ],
+      "notes": [
+        {
+          "language": "en-US",
+          "value": "This is free and unencumbered software released into the public domain."
+        }
+      ],
+      "references": [
+        {
+          "description": "Product",
+          "href": "https://github.com/rfc-reader/extended-cpe-dictionary"
+        },
+        {
+          "description": "Version",
+          "href": "https://github.com/rfc-reader/extended-cpe-dictionary/tags"
+        },
+        {
+          "description": "Vendor",
+          "href": "https://github.com/rfc-reader"
+        }
+      ],
+      "checks": [
+        {
+          "system": "https://github.com/OVAL-Community/OVAL/releases/tag/v5.12.3",
+          "check_id": "oval:tutorial:def:1",
+          "file": "https://oval.mitre.org/language/about/definition.html"
+        }
+      ]
+    },
+    {
+      "deprecated": true,
+      "updated_at": "1970-01-01T00:00:02Z",
+      "created_at": "1970-01-01T00:00:01Z",
+      "cpe_name_id": "00000000-0000-0000-0000-000000000001",
+      "cpe23": {
+        "deprecations": [
+          {
+            "date": "1970-01-01T00:00:02Z",
+            "created_at": "1970-01-01T00:00:02Z",
+            "deprecated_by": [
+              {
+                "name": "cpe:2.3:a:rfc-reader:extended_cpe_dictionary:1.0.0:-:*:*:*:*:*:*",
+                "deprecation_type": "NAME_CORRECTION"
+              }
+            ]
+          }
+        ],
+        "name": "cpe:2.3:a:rfc-reader:misspelled_extended_cpe_dictionary:1.0.0:-:*:*:*:*:*:*",
+        "provenance": {
+          "created_at": "1970-01-01T00:00:01Z",
+          "changes": [
+            {
+              "change_type": "ORIGINAL_RECORD",
+              "date": "1970-01-01T00:00:01Z",
+              "comments": "The Original Record Change Description",
+              "evidence": {
+                "evidence": "CURATOR_UPDATE",
+                "href": "https://localhost/vendor/test-application/version"
+              }
+            },
+            {
+              "change_type": "DEPRECATION",
+              "date": "1970-01-01T00:00:02Z",
+              "comments": "Product was misspelled."
+            }
+          ],
+          "organizations": [
+            {
+              "role": "authority",
+              "date": "1970-01-01T00:00:01Z"
+            },
+            {
+              "role": "submitter",
+              "date": "1970-01-01T00:00:01Z"
+            }
+          ]
+        }
+      },
+      "titles": [
+        {
+          "language": "en-US",
+          "value": "Extended CPE Dictionary Version 1.0.0"
+        }
+      ],
+      "notes": [
+        {
+          "language": "en-US",
+          "value": "This is free and unencumbered software released into the public domain."
+        }
+      ],
+      "references": [
+        {
+          "description": "Product",
+          "href": "https://localhost/vendor/test-application"
+        },
+        {
+          "description": "Version",
+          "href": "https://localhost/vendor/test-application/version"
+        },
+        {
+          "description": "Vendor",
+          "href": "https://localhost/vendor"
+        }
+      ],
+      "checks": [
+        {
+          "system": "https://github.com/OVAL-Community/OVAL/releases/tag/v5.12.3",
+          "check_id": "oval:tutorial:def:1",
+          "file": "https://oval.mitre.org/language/about/definition.html"
+        }
+      ]
+    },
+    {
+      "deprecated": false,
+      "updated_at": "1970-01-01T00:00:02Z",
+      "created_at": "1970-01-01T00:00:02Z",
+      "cpe_name_id": "00000000-0000-0000-0000-000000000002",
+      "cpe23": {
+        "deprecations": [],
+        "name": "cpe:2.3:a:rfc-reader:extended_cpe_dictionary:1.0.0:-:*:*:*:*:*:*",
+        "provenance": {
+          "created_at": "1970-01-01T00:00:02Z",
+          "changes": [
+            {
+              "change_type": "ORIGINAL_RECORD",
+              "date": "1970-01-01T00:00:02Z",
+              "comments": "The Original Record Change Description",
+              "evidence": {
+                "evidence": "CURATOR_UPDATE",
+                "href": "https://localhost/vendor/test-application/version"
+              }
+            }
+          ],
+          "organizations": [
+            {
+              "role": "authority",
+              "date": "1970-01-01T00:00:02Z"
+            },
+            {
+              "role": "submitter",
+              "date": "1970-01-01T00:00:02Z"
+            }
+          ]
+        }
+      },
+      "titles": [
+        {
+          "language": "en-US",
+          "value": "Extended CPE Dictionary Version 1.0.0"
+        }
+      ],
+      "notes": [
+        {
+          "language": "en-US",
+          "value": "This is free and unencumbered software released into the public domain."
+        }
+      ],
+      "references": [
+        {
+          "description": "Product",
+          "href": "https://localhost/vendor/test-application"
+        },
+        {
+          "description": "Version",
+          "href": "https://localhost/vendor/test-application/version"
+        },
+        {
+          "description": "Vendor",
+          "href": "https://localhost/vendor"
+        }
+      ],
+      "checks": [
+        {
+          "system": "https://github.com/OVAL-Community/OVAL/releases/tag/v5.12.3",
+          "check_id": "oval:tutorial:def:1",
+          "file": "https://oval.mitre.org/language/about/definition.html"
+        }
+      ]
+    }
+  ]
+}
+ 

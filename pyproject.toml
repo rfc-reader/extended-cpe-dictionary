@@ -1,0 +1,95 @@
+[project]
+name = "extended-cpe-dictionary"
+version = "1.0.0rc0"
+description = "A local instance of a CPE dictionary as described by the NIST IR 7697 Common Platform Enumeration: Dictionary Specification Version 2.3"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.2.17",
+    "django-nested-admin>=4.1.6",
+    "django-rest-framework>=0.1.0",
+    "django-select2>=8.4.8",
+    "gunicorn>=26.2.0",
+]
+
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-django",
+    "pytest-cov",
+    "ruff",
+    "mypy",
+    "django-stubs[compatible-mypy]",
+    "djangorestframework-stubs",
+]
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "settings"
+python_files = [
+    "test_*.py",
+    "*_test.py",
+    "tests.py",
+]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=your_app",
+    "--cov-report=term-missing",
+]
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+    "application",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+    "DJ",
+]
+ignore = [
+    "E501",
+    "F405",
+    "F403",
+    "DJ001",
+
+]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+    "application",
+]
+
+[tool.mypy]
+python_version = "3.12"
+plugins = [
+    "mypy_django_plugin.main",
+    "mypy_drf_plugin.main",
+]
+strict = true
+
+[tool.django-stubs]
+django_settings_module = "settings"
